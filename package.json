@@ -1,0 +1,47 @@
+{
+  "name": "@edclement/gke-workload-metrics",
+  "version": "0.1.0",
+  "description": "A simple http server that produces prometheus compatible metrics for all incoming http requests",
+  "keywords": [
+    "gke",
+    "workload",
+    "metrics",
+    "prometheus",
+    "http"
+  ],
+  "type": "module",
+  "author": {
+    "name": "Ed Clement",
+    "email": "ed@devintent.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edclement/gke-workload-metrics.git"
+  },
+  "bugs": {
+    "url": "https://github.com/edclement/gke-workload-metrics/issues"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "eslint": "eslint ./ --color",
+    "test": "npm run eslint"
+  },
+  "dependencies": {
+    "bowser": "2.11.0",
+    "prom-client": "14.0.1"
+  },
+  "devDependencies": {
+    "eslint": "8.6.0",
+    "eslint-config-node": "4.1.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "prettier": "2.5.1"
+  }
+}
